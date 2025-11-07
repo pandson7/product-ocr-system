@@ -31,7 +31,7 @@ function App() {
     // Poll for results
     const pollForResults = async () => {
       try {
-        const response = await fetch(`/api/products/${productId}`);
+        const response = await fetch(`/products/${productId}`);
         if (response.ok) {
           const data = await response.json();
           setCurrentProduct(data);

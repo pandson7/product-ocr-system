@@ -57,7 +57,7 @@ const ImageUpload: React.FC<ImageUploadProps> = ({ onUploadSuccess }) => {
 
     try {
       // Get upload URL
-      const response = await fetch('/api/upload', {
+      const response = await fetch('/upload', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
