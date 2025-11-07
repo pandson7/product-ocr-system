@@ -1,0 +1,22 @@
+{
+  "name": "product-ocr-system",
+  "version": "1.0.0",
+  "description": "AWS Product Image OCR Processing System",
+  "scripts": {
+    "build": "tsc",
+    "deploy": "cd cdk-app && cdk deploy --require-approval never",
+    "destroy": "cd cdk-app && cdk destroy --force"
+  },
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.0.0",
+    "@aws-sdk/client-dynamodb": "^3.0.0",
+    "@aws-sdk/client-bedrock-runtime": "^3.0.0",
+    "@aws-sdk/s3-request-presigner": "^3.0.0",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@types/uuid": "^9.0.0",
+    "typescript": "^5.0.0"
+  }
+}
